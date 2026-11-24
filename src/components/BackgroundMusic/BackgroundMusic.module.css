@@ -1,0 +1,36 @@
+.floatingAudioBtn {
+  position: fixed;
+  right: max(18px, env(safe-area-inset-right));
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 60;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(194, 155, 82, 0.62);
+  background: rgba(13, 30, 22, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.34),
+    inset 0 0 0 1px rgba(232, 216, 190, 0.12);
+  transition: transform 0.3s var(--ease-gentle), background-color 0.3s var(--ease-gentle), border-color 0.3s var(--ease-gentle);
+}
+
+.floatingAudioBtn:hover {
+  transform: translateY(-2px);
+  background: rgba(22, 48, 36, 0.94);
+  border-color: var(--color-antique-gold-light);
+}
+
+.icon {
+  color: var(--color-antique-gold-light);
+  flex-shrink: 0;
+}

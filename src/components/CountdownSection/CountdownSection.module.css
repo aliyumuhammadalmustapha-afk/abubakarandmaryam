@@ -1,0 +1,186 @@
+.countdownSection {
+  position: relative;
+  width: 100%;
+  padding: clamp(68px, 10vw, 128px) clamp(14px, 4vw, 40px);
+  background:
+    radial-gradient(ellipse 85% 50% at 50% 0%, rgba(232, 216, 190, 0.52) 0%, transparent 65%),
+    linear-gradient(180deg, var(--color-ivory) 0%, var(--color-ivory-soft) 100%);
+  color: var(--color-walnut);
+  overflow: hidden;
+}
+
+.topGoldSeam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--color-deep-green-dark) 0%,
+    var(--color-antique-gold) 50%,
+    var(--color-deep-green-dark) 100%
+  );
+}
+
+.innerContainer {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: clamp(28px, 4.5vw, 44px);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: clamp(0.64rem, 1.3vw, 0.76rem);
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold-dark);
+  margin-bottom: 12px;
+}
+
+.coupleHeading {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 5.2vw, 3.6rem);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: 0.01em;
+  color: var(--color-deep-green);
+}
+
+.coupleAmpersand {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-antique-gold-dark);
+  padding: 0 0.14em;
+}
+
+.datePlaque {
+  display: inline-flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 18px);
+  margin-top: 14px;
+}
+
+.dateRule {
+  width: clamp(24px, 5vw, 52px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-antique-gold), transparent);
+}
+
+.dateText {
+  font-family: var(--font-sans);
+  font-size: clamp(0.68rem, 1.4vw, 0.84rem);
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-walnut);
+}
+
+/* Clean, refined luxury countdown strip — always 4 columns on one line */
+.countdownCard {
+  position: relative;
+  width: 100%;
+  padding: clamp(24px, 4.5vw, 48px) clamp(8px, 3vw, 36px);
+  border-radius: 14px;
+  background: linear-gradient(160deg, var(--color-deep-green-rich) 0%, var(--color-deep-green) 55%, var(--color-deep-green-dark) 100%);
+  border: 1px solid rgba(194, 155, 82, 0.45);
+  box-shadow:
+    0 24px 60px rgba(43, 28, 17, 0.18),
+    inset 0 0 0 1px rgba(232, 216, 190, 0.12);
+}
+
+.timerRow {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  align-items: center;
+  width: 100%;
+}
+
+.unitCell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(6px, 1.5vw, 14px) clamp(2px, 1vw, 12px);
+  min-width: 0;
+}
+
+.unitCell:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 16%;
+  bottom: 16%;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(194, 155, 82, 0.45) 50%,
+    transparent 100%
+  );
+}
+
+.unitValue {
+  font-family: var(--font-serif);
+  font-size: clamp(1.85rem, 7.6vw, 4.4rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(
+    180deg,
+    var(--color-ivory) 0%,
+    var(--color-champagne) 68%,
+    var(--color-antique-gold-light) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.unitLabel {
+  margin-top: clamp(8px, 1.6vw, 14px);
+  font-family: var(--font-sans);
+  font-size: clamp(0.56rem, 1.7vw, 0.76rem);
+  font-weight: 500;
+  letter-spacing: clamp(0.12em, 0.4vw, 0.26em);
+  text-transform: uppercase;
+  color: var(--color-champagne);
+  white-space: nowrap;
+}
+
+.celebrationBegun {
+  padding: 16px 12px;
+  font-family: var(--font-serif);
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-style: italic;
+  color: var(--color-ivory);
+}
+
+@media (max-width: 400px) {
+  .countdownCard {
+    padding: 20px 4px;
+    border-radius: 10px;
+  }
+
+  .unitValue {
+    font-size: 1.7rem;
+  }
+
+  .unitLabel {
+    font-size: 0.52rem;
+    letter-spacing: 0.1em;
+  }
+}

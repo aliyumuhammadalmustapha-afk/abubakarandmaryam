@@ -1,0 +1,15 @@
+# Dependencies
+node_modules/
+
+# Production build output
+dist/
+
+# Duplicate local raw assets folder (all active site assets live in public/assets/)
+assets/
+
+# Logs & editor files
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

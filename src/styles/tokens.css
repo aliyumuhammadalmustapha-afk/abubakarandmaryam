@@ -1,0 +1,29 @@
+:root {
+  /* Client Colour Palette */
+  --color-ivory: #faf7f0;
+  --color-ivory-soft: #f2ebe0;
+  --color-champagne: #e8d8be;
+  --color-champagne-muted: #d6c19e;
+  --color-antique-gold: #c29b52;
+  --color-antique-gold-light: #e5ca8c;
+  --color-antique-gold-dark: #916d2d;
+  --color-walnut: #4a3423;
+  --color-walnut-deep: #2b1c11;
+  --color-deep-green: #163024;
+  --color-deep-green-dark: #0c1c14;
+  --color-deep-green-rich: #1e4030;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-arabic: 'Amiri', Georgia, serif;
+
+  /* Motion Language — slow, cinematic, restrained */
+  --ease-cinematic: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-gentle: cubic-bezier(0.4, 0, 0.2, 1);
+  --duration-slow: 1.2s;
+  --duration-medium: 0.75s;
+
+  /* Layout */
+  --container-max: 1120px;
+}

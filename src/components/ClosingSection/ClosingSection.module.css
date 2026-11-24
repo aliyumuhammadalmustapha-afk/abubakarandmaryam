@@ -1,0 +1,280 @@
+/* 1. Simple Prayer for the Couple */
+.couplePrayerSection {
+  position: relative;
+  width: 100%;
+  padding: clamp(64px, 9vw, 112px) clamp(18px, 4vw, 40px);
+  background: linear-gradient(180deg, var(--color-ivory-soft) 0%, var(--color-ivory) 100%);
+  color: var(--color-walnut);
+  text-align: center;
+}
+
+.topHairline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(194, 155, 82, 0.55) 50%,
+    transparent 100%
+  );
+}
+
+.narrowInner {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: clamp(0.62rem, 1.3vw, 0.74rem);
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold-dark);
+  margin-bottom: 18px;
+}
+
+.coupleArabicDua {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.55rem, 3.8vw, 2.35rem);
+  line-height: 1.75;
+  color: var(--color-deep-green);
+  direction: rtl;
+  margin-bottom: 16px;
+}
+
+.couplePrayerText {
+  font-family: var(--font-serif);
+  font-size: clamp(1.08rem, 2.1vw, 1.36rem);
+  line-height: 1.8;
+  color: var(--color-walnut-deep);
+  max-width: 600px;
+}
+
+.smallDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 160px;
+  margin: 22px auto 0;
+}
+
+.dividerRule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-antique-gold), transparent);
+}
+
+.dividerDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: var(--color-antique-gold);
+}
+
+/* 2. Share on WhatsApp Section */
+.shareSection {
+  position: relative;
+  width: 100%;
+  padding: clamp(56px, 8vw, 96px) clamp(18px, 4vw, 40px);
+  background:
+    radial-gradient(ellipse 75% 55% at 50% 50%, rgba(232, 216, 190, 0.65) 0%, transparent 70%),
+    var(--color-ivory);
+  color: var(--color-walnut);
+  text-align: center;
+}
+
+.shareCard {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: clamp(32px, 5vw, 48px) clamp(20px, 4vw, 40px);
+  border-radius: 14px;
+  background: var(--color-ivory);
+  border: 1px solid rgba(194, 155, 82, 0.45);
+  box-shadow: 0 18px 50px rgba(74, 52, 35, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shareHeading {
+  font-family: var(--font-serif);
+  font-size: clamp(1.55rem, 3.4vw, 2.15rem);
+  font-weight: 500;
+  color: var(--color-deep-green);
+  margin-bottom: 10px;
+}
+
+.shareSubtext {
+  font-family: var(--font-sans);
+  font-size: clamp(0.84rem, 1.4vw, 0.92rem);
+  line-height: 1.65;
+  color: var(--color-walnut);
+  max-width: 420px;
+  margin-bottom: 24px;
+}
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(194, 155, 82, 0.65);
+  background: linear-gradient(155deg, var(--color-deep-green-rich) 0%, var(--color-deep-green) 100%);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 28px rgba(22, 48, 36, 0.22);
+  transition: transform 0.35s var(--ease-cinematic), background-color 0.35s var(--ease-gentle), border-color 0.35s var(--ease-gentle);
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-2px);
+  border-color: var(--color-antique-gold-light);
+}
+
+.whatsappBtn:active {
+  transform: translateY(0);
+}
+
+.whatsappBtnCopied {
+  background: linear-gradient(155deg, var(--color-antique-gold-dark) 0%, var(--color-antique-gold) 100%);
+  color: var(--color-walnut-deep);
+  border-color: var(--color-antique-gold-dark);
+}
+
+.copiedHint {
+  margin-top: 12px;
+  min-height: 20px;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--color-deep-green);
+  opacity: 0;
+  transition: opacity 0.35s var(--ease-gentle);
+}
+
+.copiedHintVisible {
+  opacity: 1;
+}
+
+/* 3. Closing Verse — Surah Ar-Rum (30:21) */
+.closingFooter {
+  position: relative;
+  width: 100%;
+  padding: clamp(76px, 11vw, 136px) clamp(18px, 4vw, 40px) clamp(56px, 8vw, 88px);
+  background:
+    radial-gradient(ellipse 75% 48% at 50% 18%, rgba(194, 155, 82, 0.14) 0%, transparent 65%),
+    linear-gradient(180deg, var(--color-deep-green) 0%, var(--color-deep-green-dark) 100%);
+  color: var(--color-ivory);
+  text-align: center;
+  overflow: hidden;
+}
+
+.closingTopSeam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    var(--color-deep-green-dark) 0%,
+    var(--color-antique-gold) 50%,
+    var(--color-deep-green-dark) 100%
+  );
+}
+
+.closingInner {
+  max-width: 780px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.closingEyebrow {
+  font-family: var(--font-sans);
+  font-size: clamp(0.62rem, 1.3vw, 0.74rem);
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold-light);
+  margin-bottom: clamp(22px, 3.5vw, 32px);
+}
+
+.surahArabic {
+  font-family: var(--font-arabic);
+  font-size: clamp(1.55rem, 3.8vw, 2.45rem);
+  font-weight: 400;
+  line-height: 1.95;
+  color: var(--color-ivory);
+  direction: rtl;
+  text-shadow: 0 4px 24px rgba(194, 155, 82, 0.22);
+  margin-bottom: clamp(20px, 3.5vw, 30px);
+}
+
+.closingDivider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: min(260px, 70%);
+  margin-bottom: clamp(22px, 3.5vw, 32px);
+}
+
+.closingRule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(194, 155, 82, 0.7), transparent);
+}
+
+.closingDiamond {
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border: 1px solid var(--color-antique-gold-light);
+  background-color: rgba(194, 155, 82, 0.35);
+}
+
+.surahTranslation {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: clamp(1.06rem, 2.1vw, 1.38rem);
+  line-height: 1.82;
+  color: var(--color-champagne);
+  max-width: 640px;
+  margin-bottom: 18px;
+}
+
+.surahRef {
+  font-family: var(--font-sans);
+  font-size: clamp(0.68rem, 1.25vw, 0.78rem);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--color-antique-gold-light);
+}
+
+.signOff {
+  margin-top: clamp(40px, 6vw, 60px);
+  padding-top: 24px;
+  width: min(320px, 80%);
+  border-top: 1px solid rgba(232, 216, 190, 0.16);
+  font-family: var(--font-serif);
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  letter-spacing: 0.08em;
+  color: var(--color-champagne);
+  opacity: 0.9;
+}

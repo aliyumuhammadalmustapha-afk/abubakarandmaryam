@@ -1,0 +1,75 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  background-color: var(--color-deep-green-dark);
+  color: var(--color-walnut);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-deep-green-dark);
+  color: var(--color-walnut);
+  overflow-x: hidden;
+  min-height: 100dvh;
+}
+
+html.scroll-locked,
+body.scroll-locked {
+  overflow: hidden;
+  height: 100dvh;
+  max-height: 100dvh;
+  touch-action: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+::selection {
+  background-color: var(--color-champagne);
+  color: var(--color-walnut-deep);
+}
+
+/* Subtle custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-deep-green-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(194, 155, 82, 0.4);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(194, 155, 82, 0.65);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
