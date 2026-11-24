@@ -4,8 +4,11 @@ node_modules/
 # Production build output
 dist/
 
-# Duplicate local raw assets folder (all active site assets live in public/assets/)
-assets/
+# Duplicate local raw assets folder at repo root (all active site assets live in public/assets/)
+/assets/
+
+# Build & TypeScript cache
+*.tsbuildinfo
 
 # Logs & editor files
 *.log
